@@ -59,91 +59,101 @@
   </header>
   <main>
     <form class="form" action="/form" method="get">
-      <div class="form__wrapper">
+      <div class="form__fieldset-wrap">
         <p class="form__text">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
-        <div class="form__fieldset  form__fieldset--radio">
-          <h3 class="form__legend  form__legend--radio">Тип</h3>
-          <label class="form__label  form__label--radio">
-            <input class="form__input  form__input--radio" type="radio" name="accessories">
-            <span class="form__span  form__span--radio">Аксессуар для интерьера</span>
+        <div class="field-radio">
+          <h3 class="field-radio__title">Тип</h3>
+          <div class="field-radio__group-wrap">
+            <label class="field-radio__label">
+            <input class="field-radio__input" type="radio" name="accessories">
+            <span class="field-radio__span">Аксессуар для интерьера</span>
           </label>
-          <label class="form__label  form__label--radio">
+            <label class="form__label  form__label--radio">
             <input class="form__input  form__input--radio" type="radio" name="accessories">
             <span class="form__span  form__span--radio">Детская игрушка</span>
           </label>
+          </div>
         </div>
       </div>
-      <div class="form__fieldset  form__fieldset--gray">
-        <div class="form__wrapper">
-          <h3 class="form__legend  form__legend--check">Цвет</h3>
-          <label class="form__label  form__label--check">
-            <input class="form__input  form__input--ckeck"type="checkbox" name="color">
-            <span  class="form__span  form__span--ckeck">Белый</span>
+      <div class="field-checkbox">
+        <div class="form__fieldset-wrap">
+          <h3 class="field-checkbox__title">Цвет</h3>
+          <div class="field-checkbox__group-wrap">
+            <label class="field-checkbox__label">
+            <input class="field-checkbox__input" type="checkbox" name="color">
+            <span  class="field-checkbox__span">Белый</span>
           </label>
 
-          <label class="form__label  form__label--check">
-            <input type="checkbox" name="color">
-            <span class="form__span  form__span--check">Серый</span>
+            <label class="field-checkbox__label">
+            <input class="field-checkbox__input" type="checkbox" name="color">
+            <span class="field-checkbox__span">Серый</span>
           </label>
-          <label class="form__label  form__label--check">
-            <input type="checkbox" name="color">
-            <span class="form__span  form__span--check">«Тиффани»</span>
-          </label>
-
-          <label class="form__label  form__label--check">
-            <input type="checkbox" name="color">
-            <span class="form__span  form__span--check">Черный</span>
-          </label>
-          <label class="form__label  form__label--check">
-            <input type="checkbox" name="color">
-            <span class="form__span  form__span--check">Розовый</span>
+            <label class="field-checkbox__label">
+            <input class="field-checkbox__input" type="checkbox" name="color">
+            <span class="field-checkbox__span">«Тиффани»</span>
           </label>
 
-          <label class="form__label  form__label--check">
-            <input type="checkbox" name="color">
-            <span class="form__span  form__span--check">Оранжевый</span>
+            <label class="field-checkbox__label">
+            <input class="field-checkbox__input" type="checkbox" name="color">
+            <span class="field-checkbox__span">Черный</span>
           </label>
+            <label class="field-checkbox__label">
+            <input class="field-checkbox__input" type="checkbox" name="color">
+            <span class="field-checkbox__span">Розовый</span>
+          </label>
+
+            <label class="field-checkbox__label">
+            <input class="field-checkbox__input" type="checkbox" name="color">
+            <span class="field-checkbox__span">Оранжевый</span>
+          </label>
+          </div>
         </div>
       </div>
-      <div class="form__wrapper">
-        <div class="form__fieldset">
-          <h3 class="form__legend">Фио</h3>
-          <label class="form__label  form__label--name">
-            <span class="form__span  form__span--name">Имя:</span>
-            <input class="form__input  form__input--name" type="text" name="first-name"placeholder="Введите ваше имя">
+      <div class="form__fieldset-wrap">
+        <div class="field-text">
+          <h3 class="field-text__title">Фио</h3>
+          <div class="field-text__group-wrap">
+            <label class="field-text__label">
+            <span class="field-text__span">Имя:</span>
+            <input class="field-text__input" type="text" name="first-name"placeholder="Введите ваше имя">
           </label>
-          <label class="form__label  form__label--surname">
-            <span class="form__span  form__span--surname">Фамилия:</span>
-            <input class="form__input  form__input--surname"type="text" name="surname" placeholder="Укажите фамилию">
+            <label class="field-text__label">
+            <span class="field-text__span">Фамилия:</span>
+            <input class="field-text__input"type="text" name="surname" placeholder="Укажите фамилию">
           </label>
-          <label class="form__label  form__label--patronymic">
-            <span class="form__span  form__span--patronymic">Отчество:</span>
-            <input class="form__input  form__input--patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
+            <label class="field-text__label">
+            <span class="field-text__span">Отчество:</span>
+            <input class="field-text__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
         </label>
+          </div>
         </div>
       </div>
-      <div class="form__fieldset  form__fieldset--gray">
-        <div class="form__wrapper">
-          <label class="form__label  form__label--tel">
-            <input class="form__input  form__input--tel" type="tel" name="telephone" value="" placeholder="+7 ХХХ ХХ ХХ">
-            <span class="form__span  form__span--tel">Телефон</span>
+      <div class="field-tel">
+        <span class="field-tel__title">Телефон</span>
+        <div class="form__fieldset-wrap">
+          <div class="field-tel__group-wrap">
+            <label class="field-tel__label">
+            <input class="field-tel__input" type="tel" name="telephone" placeholder="+7 ХХХ ХХ ХХ">
           </label>
+          </div>
         </div>
       </div>
-      <div class="form__fieldset  form__fieldset--gray">
-        <div class="form__wrapper">
-          <label class="form__label  form__label-mail" for="email">
-          <input type="email" name="email" value="" placeholder="Ваш Email">
-          <span class="form__span  form__span--tel">E-mail</span>
+      <div class="field-email">
+        <div class="form__fieldset-wrap">
+          <span class="field-email__title">E-mail</span>
+          <div class="field-email__group-wrap">
+            <label class="field-email__label" for="email">
+          <input class="field-email__input" type="email" name="email" placeholder="Ваш Email">
           </label>
+          </div>
         </div>
       </div>
-      <div class="form__wrapper">
-        <div class="form__fieldset">
-          <h3 class="form__legend">Доп</h3>
-          <textarea class="form__textarea" name="textarea" rows="8" cols="40" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      <div class="form__fieldset-wrap">
+        <div class="field-textarea">
+          <h3 class="field-textarea__title">Доп</h3>
+          <textarea class="field-textarea__textarea" name="textarea" rows="8" cols="40" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
       </div>
       <p class="form__footnote">Все поля обязательны для заполнения</p>

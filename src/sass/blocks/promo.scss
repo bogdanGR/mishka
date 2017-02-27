@@ -1,0 +1,22 @@
+.promo__main-title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.promo__title {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  &--bg-lighter-green {
+    display: block;
+    background-color: #63d1bb;
+  }
+  &--bg-darken-green {
+    display: block;
+    background-color: #56c3b2;
+  }
+}
