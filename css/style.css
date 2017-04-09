@@ -415,7 +415,8 @@ template {
   display: none; }
 
 body {
-  min-width: 320px;
+  max-width: 320px;
+  margin: 0 auto;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -423,11 +424,112 @@ body {
   color: #000000;
   background-color: #ffffff; }
 
-img {
-  width: 100%;
-  height: auto; }
-
-.menu {
+.menu__list {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+.menu__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none; }
+
+.menu__list-user {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.menu__link-user {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none; }
+
+.page-header__logo {
+  width: 86px;
+  margin: 0 auto; }
+
+.page-header__media-wrapper {
+  min-height: 80px;
+  position: relative; }
+
+.promo__main-title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700; }
+
+.promo__title {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none; }
+  .promo__title--bg-lighter-green {
+    display: block;
+    background-color: #63d1bb; }
+  .promo__title--bg-darken-green {
+    display: block;
+    background-color: #56c3b2; }
+  @media (max-width: 767px) {
+
+  .burger {
+    position: absolute;
+    top: auto;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: none;
+    outline: none; }
+
+  .burger:hover {
+    background-color: #ffffff; }
+
+  .burger:active {
+    background-color: #ffffff; }
+
+  .burger::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 6px;
+    width: 25px;
+    height: 4px;
+    background-color: #221f1f;
+    box-shadow: 0 8px 0 0 #221f1f, 0 16px 0 0 #221f1f; }
+
+  .burger.burger--opened {
+    top: -5px;
+    right: 0;
+    left: 250px;
+    background-color: transparent; }
+
+  .burger.burger--opened::before, .burger.burger--opened::after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 24px;
+    width: 32px;
+    height: 5px;
+    background-color: white; }
+
+  .burger.burger--opened::before {
+    transform: rotate(45deg);
+    box-shadow: none; }
+
+  .burger.burger--opened::after {
+    transform: rotate(-45deg); }
+
+  .burger.burger--opened:active::before, .burger.burger--opened:active::after {
+    background-color: white; } }
+  @media (min-width: 768px) {
+
+  .burger {
+    display: none; } }
