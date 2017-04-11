@@ -1,73 +1,56 @@
 @media (max-width: $mobile-width-only) {
-
   .burger {
-    position: absolute;
-    top: auto;
-    right: 0;
-    z-index: 2;
-
+    position: relative;
     display: block;
-    width: 50px;
-    height: 50px;
-
+    padding: 0;
+    width: 20px;
+    height: 14px;
+    background-color: transparent;
     font-size: 0;
-
-    background-color: #ffffff;
     cursor: pointer;
-    border: none;
-    outline: none;
+    border: 0;
+    outline-color: transparent;
 
-    &:hover {
-      background-color: #ffffff;
-    }
-
-    &:active {
-      background-color: #ffffff;
-    }
-
-    &::before {
-      content: "";
+    &__layer {
       position: absolute;
-      top: 17px;
-      left: 6px;
+      top: 6px;
+      width: 100%;
+      display: block;
+      height: 2px;
+      background: #000;
+      transition: background-color 0.3s ease-in-out;
 
-      width: 25px;
-      height: 4px;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #000;
+        transition: transform 0.3s ease-in-out;
+      }
 
-      background-color: $bg-primary;
-      box-shadow: 0 8px 0 0 $bg-primary, 0 16px 0 0 $bg-primary;
+      &::before {
+        top: -6px;
+      }
+
+      &::after {
+        top: 6px;
+      }
     }
   }
-  .burger.burger--opened {
-    top: -5px;
-    right: 0;
-    left: 250px;
 
+    // правило для бургера в состоянии креста
+  .burger--closed .burger__layer {
     background-color: transparent;
 
-    &::before, &::after {
-      content: "";
-      position: absolute;
-      top: 29px;
-      left: 24px;
-
-      width: 32px;
-      height: 5px;
-
-      background-color: rgba(255, 255, 255, 10);
-    }
-
     &::before {
-      transform: rotate(45deg);
-      box-shadow: none;
+      transform: translateY(6px) rotate(45deg);
     }
 
     &::after {
-      transform: rotate(-45deg);
-    }
-
-    &:active::before, &:active::after {
-      background-color: rgba(255, 255, 255, 10);
+      transform: translateY(-6px) rotate(-225deg);
     }
   }
 }

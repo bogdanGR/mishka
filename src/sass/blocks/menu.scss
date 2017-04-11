@@ -1,31 +1,42 @@
-.menu {
+@media (max-width: $mobile-width-only) {
+  .menu__nav {
+    overflow: hidden;
 
+    &--opened {
+      height: 400px;
+
+      transition: height 0.9s ease;
+    }
+
+    &--closed {
+      height: 0;
+    }
+    &--nojs {
+      height: 400px;
+    }
+  }
 }
+
 .menu__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
+  text-align: center;
+}
+.menu__item {
+    padding: 15px 0;
+
+    &--hidden {
+      display: none;
+    }
 }
 .menu__link {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
 
-  color: #000000;
+  color: $txt-primary;
   text-decoration: none;
-}
-.menu__list-user {
-  margin: 0;
-  padding: 0;
 
-  list-style: none;
-}
-.menu__link-user {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-
-  color: #000000;
-  text-decoration: none;
 }

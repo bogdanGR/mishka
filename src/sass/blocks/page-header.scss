@@ -1,8 +1,23 @@
 .page-header__logo {
   width: 86px;
-  margin: 0 auto;
+  margin-left: 28%;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
+// .page-header__wrapper {
+//   height: 80px;
+// }
 .page-header__media-wrapper {
-  min-height: 80px;
   position: relative;
+  overflow: visible;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  min-height: 80px;
+
+  border-bottom: 1px solid #ececec;
+
 }

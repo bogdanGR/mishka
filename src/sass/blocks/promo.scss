@@ -1,7 +1,14 @@
+.promo {
+  background: #fbfbfb url("../img/hero-mobile.jpg") 0 75px no-repeat;
+  width: 100%;
+  height: 377px;
+}
 .promo__main-title {
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
+
+  color: $txt-secondary;
 }
 .promo__title {
   font-size: 19px;
@@ -10,6 +17,7 @@
 
   color: #ffffff;
   text-decoration: none;
+  text-align: left;
 
   &--bg-lighter-green {
     display: block;

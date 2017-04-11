@@ -6,12 +6,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Мишка: Каталог</title>
   <link rel="stylesheet" href="css/style-min.css">
-  <!--полифил для picture  -->
   <script>
-    // Picture element HTML5 shiv
     document.createElement("picture");
   </script>
-  <script src="js/minjs/picturefill.js" async></script>
 </head>
 
 <body>
@@ -22,13 +19,15 @@
           <img src="" alt="mishka" width="" height="">
         </a>
       </div>
-      <button class="burger" type="button" name="button">Закрыть меню</button>
+      <button class="burger  page-header__toggle" type="button">
+        <span class="burger__layer">переключатель</span>
+      </button>
     </div>
-    <nav class="menu  menu--visible">
+    <nav class="menu  menu__nav  menu__nav--nojs  menu__nav--closed">
       <div class="menu__wrapper">
-        <ul class="menu__list">
+        <ul class="menu__list  menu__list--nav">
           <li class="menu__item">
-            <a class="menu__link  menu__link--active">Каталог товаров</a>
+            <a class="menu__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="form.html">Вязание на заказ</a>
@@ -40,15 +39,15 @@
             <a class="menu__link" href="#">Распродажа</a>
           </li>
         </ul>
-        <ul class="menu__list-user">
-          <li class="menu__item-user">
-            <a class="menu__link-user" href="#">Поиск по сайту</a>
+        <ul class="menu__list  menu__list--user">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Поиск по сайту</a>
           </li>
-          <li class="menu__item-user">
-            <a class="menu__link-user" href="#">Корзина: пока пуста</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Корзина: пока пуста</a>
           </li>
-          <li class="menu__item-user  menu__item-user--hidden">
-            <a class="menu__link-user" href="#">Бесплатная доставка по России</a>
+          <li class="menu__item  menu__item--hidden">
+            <a class="menu__link" href="#">Бесплатная доставка по России</a>
           </li>
         </ul>
       </div>
@@ -112,7 +111,7 @@
       <div class="page-footer__logo">
         <img class="page-footer__img  page-footer__img--hidden" src="" alt="logo htmlacademy" width="" height="">
       </div>
-      <div class="social-links">
+      <div class="social-icons">
         <a class="social-link  social-link--inst" href="#">Инстаграм</a>
         <a class="social-link  social-link--fb" href="#">Фейсбук</a>
         <a class="social-link  social-link--tw" href="#">Твиттер</a>
@@ -130,6 +129,8 @@
     <button class="popup__btn" type="button" name="button">L</button>
     <a href="#" class="popup__link">Добавить</a>
   </div>
+  <script src="js/minjs/main.js" type="text/javascript"></script>
+  <script src="js/minjs/picturefill.js"  type="text/javascript"></script>
 </body>
 
 </html>
