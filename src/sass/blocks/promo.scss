@@ -1,16 +1,25 @@
 .promo {
-  background: #fbfbfb url("../img/hero-mobile.jpg") 0 75px no-repeat;
+  background: #fbfbfb url("../img/hero-mobile.jpg") center top no-repeat;
   width: 100%;
   height: 377px;
 }
 .promo__main-title {
+  width: 240px;
+  margin: 0 auto;
+  padding-top: 75px;
+  margin-bottom: 100px;
+
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
 
-  color: $txt-secondary;
+  color: #010000;
+  text-align: center;
 }
 .promo__title {
+  width: 32%;
+}
+.promo__link {
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
@@ -18,7 +27,7 @@
   color: #ffffff;
   text-decoration: none;
   text-align: left;
-
+  padding: 15px;
   &--bg-lighter-green {
     display: block;
     background-color: #63d1bb;

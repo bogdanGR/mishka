@@ -4,9 +4,7 @@
   padding-top: 20px;
   margin-bottom: 20px;
 }
-// .page-header__wrapper {
-//   height: 80px;
-// }
+
 .page-header__media-wrapper {
   position: relative;
   overflow: visible;
@@ -18,6 +16,11 @@
 
   min-height: 80px;
 
-  border-bottom: 1px solid #ececec;
+  border-bottom: 2px solid #ececec;
+}
+.page-header__promo {
+  position: relative;
+  z-index: 0;
 
+    margin-bottom: 150px;
 }
